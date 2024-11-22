@@ -1,0 +1,69 @@
+<div class="container">
+  <h1>{{title | uppercase}}</h1>
+
+  <h2>Interpolacja</h2>
+  Imię: {{name}}<br>
+  Wiek: {{age}}<br>
+  Lider: {{isLeader ? "tak" : "nie"}}<br>
+  Zdolności: {{skills}}<br>
+  TypeScript inline: {{ 2 * 2 * 2 * 2 }}<br>
+  Inicjał: {{name | slice:0:1 | uppercase}}<br>
+  Egzamin: {{exam | date:'d.MM.y H:mm'}}<br>
+
+  <!-- tak - kolor success, nie - kolor danger -->
+  <!-- <div [class.success]="isAdult()" [class.danger]="!isAdult()"> -->
+  <div [ngClass]="{'success': isAdult(), 'danger': !isAdult()}">
+  Czy dorosły: {{isAdult() ? "tak" : "nie"}}
+  </div>
+
+  <h2>Wyświetlanie tablic</h2>
+  <p>Zdolności:</p>
+  <ul>
+    <li *ngFor="let skill of skills">{{skill}}</li>
+  </ul>
+
+  <p>Nowa wersja pętli for:</p>
+  <ul>
+    @for (skill of skills; track skill) {
+      <li>{{skill}}</li>
+    }
+  </ul>
+
+  <h2>Events</h2>
+  <button (click)="hello()">Hello</button>
+  <button (click)="updateTitle()">Update title</button>
+  <button (click)="makeAlexOlder()">Alex dodaj rok</button>
+  <button (click)="addSkill()">Dodaj umiejętność</button>
+
+  <p>Wybór poziomu trudności:</p>
+  <button (click)="lower()">◀</button>
+  <span style="display: inline-block; width: 120px; text-align: center">
+    {{difficulties[selected]}}
+  </span>
+  <button (click)="higher()">▶</button>
+
+  <h2>Property binding</h2>
+
+  <!-- Tak się tego nie robi -->
+  <!-- <img src="{{imageURL}}" alt=""> -->
+
+  <!-- Property binding -->
+  <img [src]="imageURL" alt=""><br>
+  <button (click)="blueImage()">Blue</button>
+  <button (click)="redImage()">Red</button>
+  <button (click)="greenImage()">Green</button>
+  <br><br>
+
+  <textarea [disabled]="locked">Przykład tekstu</textarea><br>
+  <button (click)="locked = !locked">Blokuj/odblokuj</button>
+  <br><br>
+
+  <h3 [class.danger]="isError">Testowanie klas</h3>
+  <button (click)="isError = !isError">Testuj błąd</button>
+
+  <h3 [style.letter-spacing]="letterSpacing + 'px'">TESTOWANIE STYLÓW</h3>
+  <button (click)="letterSpacing = letterSpacing - 1">-1</button>
+  <button (click)="letterSpacing = letterSpacing + 1">+1</button>
+
+
+</div>
