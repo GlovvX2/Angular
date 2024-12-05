@@ -1,0 +1,30 @@
+<div class="conatiner">
+    User:<br>
+    <div>
+        <input type="text" [(ngModel)]="login" (keyup)="valid()">
+        @if(statusLogin=='tak')
+        {
+            <img width="20px" height="20px" src="images/approve.jpg" >
+        }
+        @if(statusLogin=='nie')
+        {
+            <img width="20px" height="20px" src="images/deny.png">
+        }
+    </div>
+    
+    <br>
+    Password: (min 8 znakow)<br>
+    <div>
+        <input type="text" [(ngModel)]="password" (keyup)="valid()">
+        @if(statusPassword=='tak')
+        {
+            <img width="20px" height="20px" src="images/approve.jpg">
+        }
+        @if(statusPassword=='nie')
+        {
+            <img width="20px" height="20px" src="images/deny.png">
+        }
+    </div>
+    
+</div>
+
