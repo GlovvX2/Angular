@@ -1,0 +1,123 @@
+.container
+{
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+table
+{
+    width: 100%;
+    border-collapse:collapse ;
+}
+
+table td, table th
+{
+    padding: 2px;
+    border: 1px solid black;
+}
+table tr:nth-child(2n+1) td
+{
+    background-color: rgb(191, 221, 252);
+}
+.grade
+{
+    display: inline-block;
+    padding: 2px;
+    margin: 0 4px;
+    background-color: #567;
+    width: 32px;
+    border-radius: 4px;
+}
+input 
+{
+    outline: none;
+    border: none;
+    padding: 8px;
+    background:rgb(191, 221, 252) ;
+    color: white;
+    border-radius: 8px;
+    width: 400px;
+    font-size: 180x;
+}
+input::placeholder
+{
+    color: #678;
+}
+.filters
+{
+    margin: 20px;
+}
+.btn
+{
+    margin:0 20px;
+    border: 1px solid black;
+    background-color:rgb(191, 221, 252);
+    margin: 10px;
+    height: 20px;
+}
+button:hover
+{
+    filter: brightness(120%);
+}
+button
+{
+    outline: 0;
+    border: 0;
+    background: none;
+}
+.dialog
+{
+    position: fixed;
+    background: white;
+    color:black;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    left: calc(50vw - 300px);  /*  ew. transform:translate(-50%, 0);*/
+    top: 100px;
+
+}
+.small-dialog
+{
+    position: fixed;
+    background: white;
+    color:black;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    left: calc(50vw - 300px);  /*  ew. transform:translate(-50%, 0);*/
+    top: 100px;
+
+}
+.checkboxinput
+{
+    width:20px;
+}
+.remove-btn
+{
+    padding: 4px;
+}
+.student-input
+{
+    margin: 6px;
+}
+.small-btn
+{
+    border: 1px solid black;
+    background-color:rgb(191, 221, 252);
+    margin: 10px;
+    width: 80px;
+    height: 20px;
+}
+.grade-btn
+{
+    border: 1px solid black;
+    background-color:rgb(191, 221, 252);
+    margin: 10px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,79 @@
+<div class="container">
+  <h1>Advanced students manager v1.0</h1>
+  <div class="filters">
+    <input type="text" placeholder="szukaj..." [(ngModel)]="searchName" (keyup)="search()"/>
+    <button class="btn" (click)="dialogNew = true">Dodaj studenta</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Imie</th>
+        <th>Nazwisko</th>
+        <th>Wiek</th>
+        <th>Oceny</th>
+        <th>Czy lider</th>
+        <th>Usuń</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(student of students; track student)
+      {
+        <tr>
+          <td>{{student.id}}</td>
+          <td>{{student.firstName}}</td>
+          <td>{{student.lastName}}</td>
+          <td>{{student.age}}</td>
+          <td>
+            @for (grade of student.grades; track grade) 
+            {
+              <div class="grade" [style.background]="mapGradeToColor(grade)">{{grade}}</div>
+            }
+            <button class="remove-btn" (click)="addStudentGrade(student.id)">➕</button>
+          </td>
+          <td>{{student.isLeader ?'👑' : ''}}</td>
+          <td><button class="remove-btn" (click)="removeStudentQuery(student.id)">❌</button></td>
+        </tr>
+      }
+    @if(dialogNew)
+    {
+      <div class="dialog">
+        <h2>NOWY STUDENT</h2>
+        <input type="text" placeholder="Imię" class="student-input" [(ngModel)]="newFirstName"><br>
+        <input type="text" placeholder="Nazwisko" class="student-input" [(ngModel)]="newLastName"><br>
+        <input type="number" placeholder="Wiek" class="student-input" [(ngModel)]="newAge"><br>
+        <input type="checkbox" class="student-input checkboxinput" [(ngModel)]="newLeader"> Lider <br>
+        <button class='small-btn' (click)="addStudent()">Dodaj</button>
+        <button class='small-btn' (click)="cancelStudent()">Anuluj</button>
+      </div>
+    }
+
+    @if(dialogRemove)
+    {
+      <div class="small-dialog">
+        <h2>Usun studenta</h2>
+        <p>Czy chcesz usunąć studenta?</p>
+        <button class='small-btn'(click)="removeStudent()">Tak</button> 
+        <button class='small-btn' (click)="cancelRemove()">Nie</button>
+      </div>
+    }
+
+    @if(dialogGrade)
+    {
+      <div class="small-dialog">
+        <h2>Dodaj ocene</h2>
+        <p>
+          <button class='grade-btn' (click)="addGrade(6)">6</button>
+          <button class='grade-btn' (click)="addGrade(5)">5</button>
+          <button class='grade-btn' (click)="addGrade(4)">4</button>
+          <button class='grade-btn' (click)="addGrade(3)">3</button>
+          <button class='grade-btn' (click)="addGrade(2)">2</button>
+          <button class='grade-btn' (click)="addGrade(1)">1</button>
+        <p>
+        <button class='small-btn' (click)="cancelGrade()">Anuluj</button>
+      </div>
+    }
+      
+    </tbody>
+  </table>
+</div>

@@ -1,3 +1,4 @@
+<h2>Zad 1</h2>
 <div class="conatiner">
     User:<br>
     <div>
@@ -15,7 +16,7 @@
     <br>
     Password: (min 8 znakow)<br>
     <div>
-        <input type="text" [(ngModel)]="password" (keyup)="valid()">
+        <input type="password" [(ngModel)]="password" (keyup)="valid()">
         @if(statusPassword=='tak')
         {
             <img width="20px" height="20px" src="images/approve.jpg">
