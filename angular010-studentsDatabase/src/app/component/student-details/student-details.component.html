@@ -1,0 +1,38 @@
+<div class="container">
+    @if(stud)
+    {
+        <div>
+            <p> 
+                {{stud.firstName}}
+                {{stud.lastName}}
+            </p>
+            <p> 
+                Wiek: {{stud.age}}
+            </p>
+            <p>
+                Czy jest liderem: {{stud.leader ? 'Jest' : 'Nie jest'}} 
+            </p>
+            <p> 
+                Skille:
+                {{stud.skills}}
+            </p>
+            <p> 
+                <img height="200px" width="200px" [src]=" stud.photo" />
+            </p>
+            <p>
+                <a [routerLink]="['/student']">Powrot</a>
+            </p>
+        </div>
+    }
+    @else
+    {
+        <div>
+            <p>
+                Nie ma takiego tytulu
+            </p>
+            <p>
+                <a [routerLink]="['/student']">Powrot</a>
+            </p>
+        </div>
+    }
+</div>

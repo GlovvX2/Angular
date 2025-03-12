@@ -1,0 +1,15 @@
+@if(movie)
+{
+    <div>
+        <p>{{movie.title}}</p>
+        <p><img width="200px" height="300px" [src]="'Images/'+movie.cover "/></p>
+        <p>{{movie.director}}</p>
+        <p>{{movie.genre}}</p>
+
+    </div>
+}
+@else
+{
+    <p>Nie ma takiego tytulu</p>
+}
+<a [routerLink]="['/movies']">Powrot</a><br>
