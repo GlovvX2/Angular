@@ -1,0 +1,41 @@
+<h2>Zad 2</h2>
+    <div class="container">
+        <input type="radio" name="pizza" [(ngModel)]="rd1" value="Lite" >3D Studio Lite<br>
+    <input type="radio" name="pizza" [(ngModel)]="rd1" value="Standard" >3D Studio Standard<br>
+    <input type="radio" name="pizza" [(ngModel)]="rd1" value="Ultimate" >3D Studio Ultimate<br>
+    <h3>Szczegóły pakiety: {{rd1}}</h3>
+
+    @switch (rd1)
+    {
+        @case('Lite')
+        {
+            <ul>
+                <li>Modelowanie 3D</li>
+                <li>Nakładanie tekstur</li>
+                <li>Rendering full HD</li>
+                <li>Cena tylko <strong>249 zł</strong></li>
+            </ul>
+        }
+        @case('Standard')
+        {
+            <ul>
+                <li>Animacje</li>
+                <li>Pluginy</li>
+                <li>Rendering 4K</li>
+                <li>Cena tylko <strong>499 zł</strong></li>
+            </ul>
+        }
+        @case('Ultimate')
+        {
+            <ul>
+                <li>Modelowanie 3D</li>
+                <li>Rigging postaci 3D</li>
+                <li>Pakiet zasobów</li>
+                <li>Cena tylko <strong>799 zł</strong></li>
+            </ul>
+        }
+        @default {
+            <p>[wybierz pakiet]</p>
+        }
+    }
+</div>

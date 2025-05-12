@@ -1,0 +1,4 @@
+@for(movie of movies; track movie.id)
+{
+    <a [routerLink]="['/movie',movie.id]">{{movie.title}}</a><br>
+}

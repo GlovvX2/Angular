@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+.body {
+    display: flex;
+    justify-content: center;
+}
+.inbody
+{
+    display: block;
+    text-align: center;
+}
+input 
+{
+    border: 0;
+    border-radius: 20px;
+    background-color: gold;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+}
+h1,p
+{
+    color: gold;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+span
+{
+    background-color: gold;
+    color: black;
+    display: inline-block;
+    width: 200px;
+    border-radius: 10px;
+}
+p::first-letter
+{
+    font-size: 20px;
+}
+#gyro1,#gyro2
+{
+    width: 500px;
+}
+

@@ -1,0 +1,8 @@
+<div class="container">
+    @for(student of stud; track student.id)
+    {
+        <p>
+            <a [routerLink]="['/student',student.id]">{{student.firstName}} {{student.lastName}}</a>
+        </p>
+    }
+</div>

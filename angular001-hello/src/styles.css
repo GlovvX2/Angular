@@ -1,0 +1,46 @@
+body
+{
+    background: #F0F0F0;
+    color: #101010;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    width: 1200px;
+    margin: auto;
+}
+
+h1
+{
+    color: crimson;
+    text-align: center;
+}
+
+button
+{
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    transition: 0.3s all;
+    margin: 4px;
+}
+
+button:hover
+{
+    background-color: #FCFCFC;
+}
+
+.danger
+{
+    background: salmon;
+    color: maroon;
+}
+
+.success
+{
+    background: greenyellow;
+    color: darkgreen;
+}

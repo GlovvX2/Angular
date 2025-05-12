@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="containerToDo">
+        <h1>Lista do zrobienia</h1>
+        @for(listaDoZrobienia of lista;track lista )
+        {
+            <div class="lista">
+                <input type="checkbox" [(ngModel)]="listaDoZrobienia.isItDone"/>
+                <span class="listaSpan">
+                    {{listaDoZrobienia.toDo}}
+                </span>
+            </div>
+        }
+        <div class="buttons">
+            <input type="text" (keydown.enter)="addZadanie()" [(ngModel)]="zadanie" />
+            <button (click)="removeZadanie()">Usuń wykonane</button>
+        </div>
+            
+    </div>
+    
+</div>

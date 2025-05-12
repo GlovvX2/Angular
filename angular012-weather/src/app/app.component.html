@@ -1,0 +1,13 @@
+<div class="body">
+  <img src="../assets/gyro.png" id="gyro1">
+  <div class="inbody">
+    <h1>Moja (DZIWACZNA) aplikacja pogodowa</h1>
+    <p>Miasto: <Br><input type="text" [(ngModel)]="city" (keydown.enter)="updateWeather()"/></p>
+    <p>Temperatura: <Br><span>{{this.temp}} &deg;c</span></p>
+    <p>Wilgotność: <Br><span>{{this.humidity}} %</span></p>
+    <p>Ciśnienie: <Br><span>{{this.pressure}} hPa</span></p>
+    <p>Wiatr: <Br><span>{{this.wind}} km/h</span></p>
+    <p>Ogolne: <Br><span>{{this.description}}</span></p>
+  </div>
+  <img src="../assets/Gyro.webp" id="gyro2">
+</div>

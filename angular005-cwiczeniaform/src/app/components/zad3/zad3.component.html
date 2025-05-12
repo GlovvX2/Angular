@@ -1,0 +1,14 @@
+<h2>zad 3</h2>
+<div class="container">
+    <h3>Wybierz wersje instalatora:</h3>
+    <select [(ngModel)]="base" (change)="selectInstaler()">
+        <option value="Najpierw wybierz wersje pobierz">[Wybierz]</option>
+        <option value="3D Studio for windows 64 bit pobierz">3D Studio for windows 64 bit</option>
+        <option value="3D Studio for windows 32 bit pobierz">3D Studio for windows 32 bit</option>
+        <option value="3D Studio for windows portable pobierz">3D Studio for windows portable</option>
+        <option value="3D Studio for linux pobierz">3D Studio for linux</option>
+        <option value="3D Studio for macos pobierz">3D Studio for macos</option>
+    </select>
+    <Br>
+    <a href={{output}}>{{base}}</a>
+</div>
