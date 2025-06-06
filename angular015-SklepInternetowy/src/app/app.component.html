@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="header">
+        <div class="searchbarContainer">
+            <h1>Obuwie sportowe</h1>
+            <input [(ngModel)]="szukane" type="text" class="searchbar" (keydown.enter)="update()"/> 🔎
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

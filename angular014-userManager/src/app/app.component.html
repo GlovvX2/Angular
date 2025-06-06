@@ -1,0 +1,28 @@
+<h1>Users Manager</h1>
+<table>
+<tr>
+  <td>Nazwa</td>
+  <td>Email</td>
+  <td>Wiek</td>
+</tr>
+@for(user of users; track user.id)
+{
+<tr>
+  <td>😈{{user.name}}</td>
+  <td>🥀{{user.email}}</td>
+  <td>🍇{{user.age}}</td>
+  <button (click)="deleteUser(user.id)">✖️</button>
+</tr>
+}
+@empty
+{
+  <i>Trwa wczytywanie danych....</i>
+}
+  <tr>
+    <td>😈 <input type="text" placeholder="Nazwa uzytkownika" [(ngModel)]="newUser.name"/></td>
+    <td>🥀 <input type="text" placeholder="Email" [(ngModel)]="newUser.email" /></td>
+    <td>🍇 <input type="number" placeholder="Wiek"  [(ngModel)]="newUser.age"/></td>
+    <td><button (click)="addUser()">Dodaj</button></td>
+  </tr>
+
+</table>

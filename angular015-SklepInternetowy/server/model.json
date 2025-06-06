@@ -1,0 +1,127 @@
+{
+    "products":
+    [
+    {
+        "id": 1,
+        "cena": 299.99,
+        "rozmiar": 42,
+        "opis": "Wygodne sneakersy na co dzień z oddychającą siateczką.",
+        "marka": "Nike",
+        "nazwa": "Air Zoom Lite"
+    },
+    
+    {
+        "id": 2,
+        "cena": 349.99,
+        "rozmiar": 44,
+        "opis": "Eleganckie buty skórzane idealne na formalne okazje.",
+        "marka": "Clarks",
+        "nazwa": "Oxford Classic"
+    },
+    {
+        "id": 3,
+        "cena": 219.5,
+        "rozmiar": 41,
+        "opis": "Lekkie buty sportowe do biegania z piankową podeszwą.",
+        "marka": "Adidas",
+        "nazwa": "RunSwift"
+    },
+    {
+        "id": 4,
+        "cena": 189.0,
+        "rozmiar": 40,
+        "opis": "Letnie sandały z regulowanymi paskami i amortyzacją.",
+        "marka": "Birkenstock",
+        "nazwa": "SummerStep"
+    },
+    {
+        "id": 5,
+        "cena": 409.0,
+        "rozmiar": 43,
+        "opis": "Wysokiej klasy buty trekkingowe wodoodporne.",
+        "marka": "Salomon",
+        "nazwa": "X Ultra 4"
+    },
+    {
+        "id": 6,
+        "cena": 259.99,
+        "rozmiar": 42,
+        "opis": "Minimalistyczne trampki z naturalnych materiałów.",
+        "marka": "Vans",
+        "nazwa": "Eco Canvas"
+    },
+    {
+        "id": 7,
+        "cena": 499.99,
+        "rozmiar": 45,
+        "opis": "Profesjonalne buty do koszykówki z wysoką cholewką.",
+        "marka": "Jordan",
+        "nazwa": "Flight Pro"
+    },
+    {
+        "id": 8,
+        "cena": 279.99,
+        "rozmiar": 39,
+        "opis": "Damskie sneakersy z modnym wzorem i amortyzacją.",
+        "marka": "New Balance",
+        "nazwa": "574 Blossom"
+    },
+    {
+        "id": 9,
+        "cena": 199.0,
+        "rozmiar": 40,
+        "opis": "Klasyczne buty miejskie z wytrzymałej tkaniny.",
+        "marka": "Converse",
+        "nazwa": "Chuck Taylor All Star"
+    },
+    {
+        "id": 10,
+        "cena": 379.0,
+        "rozmiar": 44,
+        "opis": "Półbuty zamszowe na jesienne dni.",
+        "marka": "Ecco",
+        "nazwa": "Urban Street"
+    },
+    {
+        "id": 11,
+        "cena": 319.5,
+        "rozmiar": 42,
+        "opis": "Lekkie sneakersy na lato z siateczką mesh.",
+        "marka": "Reebok",
+        "nazwa": "Flex Run"
+    },
+    {
+        "id": 12,
+        "cena": 269.0,
+        "rozmiar": 43,
+        "opis": "Męskie klapki z ergonomiczną wkładką.",
+        "marka": "Crocs",
+        "nazwa": "LiteRide Slide"
+    },
+    {
+        "id": 13,
+        "cena": 439.99,
+        "rozmiar": 41,
+        "opis": "Buty górskie z antypoślizgową podeszwą.",
+        "marka": "The North Face",
+        "nazwa": "Hedgehog Fastpack"
+    },
+    {
+        "id": 14,
+        "cena": 149.99,
+        "rozmiar": 38,
+        "opis": "Kolorowe tenisówki idealne na wiosnę.",
+        "marka": "Kappa",
+        "nazwa": "ColorWay"
+    },
+    {
+        "id": 15,
+        "cena": 389.99,
+        "rozmiar": 46,
+        "opis": "Techniczne buty do biegania w terenie.",
+        "marka": "Asics",
+        "nazwa": "Trail Scout"
+    }
+]
+}
+

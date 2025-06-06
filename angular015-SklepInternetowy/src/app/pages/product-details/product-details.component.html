@@ -1,0 +1,13 @@
+<div class="container">
+    @if(product)
+    {
+        <div class="containerCard">
+            <p>{{product.nazwa}}</p>
+            <p>{{product.marka}}</p>
+            <p>{{product.cena}}</p>
+            <p>{{product.opis}}</p>
+            <p>{{product.rozmiar}}</p>
+            <a [routerLink]="['/products']">Powrot</a><br>
+        </div>
+    }
+</div>

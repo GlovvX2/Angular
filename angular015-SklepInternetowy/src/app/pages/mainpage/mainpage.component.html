@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="items">
+        @for(prod of products ;track prod)
+        {
+            <div class="containerCard">
+                <a [routerLink]="['/products',prod.id]">{{prod.nazwa}}</a><br>
+                <p>{{prod.marka}}</p>
+                <p>{{prod.cena}}zł</p>
+                <p>Rozmiar: {{prod.rozmiar}}</p>
+            </div>
+        }
+    </div>
+</div>
